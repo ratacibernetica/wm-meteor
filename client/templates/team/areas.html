@@ -1,0 +1,42 @@
+<template name="membertabs">
+  <ul id="member-tabs" class="tabs">
+    {{#each this}}
+      <li class="tab col s3"> <a data-teamid="#tab{{id}}" class="team-member" href="#tab{{id}}">{{firstName}}</a></li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="memberareas">
+  {{#each this}}
+  <div class="col s12" id="tab{{id}}">
+    <section>
+      <div class="row">
+        {{#each areas}}
+        <div class="col s12 m3">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">{{name}}
+                <div class="progress">
+                  <div class="determinate" style="width: 100%"></div>
+                </div>
+              </span>
+              <ul>
+                {{#each skills}}
+                <li>{{name}}</li>
+                {{/each}}
+              </ul>
+            </div>
+            {{#if ../url}}
+            {{#if first}}
+            <div class="card-action">
+              <a href="{{../url}}" target="_blank">Linkedin</a>
+            </div>{{/if}}
+            {{/if}}
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </section>
+  </div>
+  {{/each}}
+</template>

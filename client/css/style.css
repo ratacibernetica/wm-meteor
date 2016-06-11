@@ -1,0 +1,146 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+.wm-foto{
+    width:  170px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    cursor:pointer;
+    transition: 1s;
+}
+
+.wm-foto:hover{
+  -webkit-filter: none; /* Chrome, Safari, Opera */
+  filter: none;
+  width: 175px;
+}
+
+.card .card-content{
+    max-height: 335px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.card{
+  box-shadow: none;
+}
+
+video{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+    /*max-width: 100%;*/
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    z-index: -100;
+
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+header, main, footer {
+      padding-left: 240px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+         
+
+.con-fondo{
+    background:rgba(100,100,100,0.5);
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+    video{
+      max-height: 100%;
+    }
+}
+@media only screen and (min-width : 601px) {
+    video{
+      max-width: 100%;
+    }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.retraso-1{
+  -webkit-animation-delay:1s;
+  -moz-animation-delay:1s;
+  animation-delay:1s;
+
+}
+.retraso-2{
+  animation-delay:2s;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2;
+}
+.retraso-3{
+  animation-delay:3s;
+  -webkit-animation-delay:3s;
+  -moz-animation-delay:3s;
+}
+.retraso-5{
+  animation-delay:5s;
+  -webkit-animation-delay:5s;
+  -moz-animation-delay:5s;
+}
+footer.page-footer {
+  margin: 0;
+}
+
+.parallax-container {
+      height: 100vh;
+    }

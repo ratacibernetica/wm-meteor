@@ -1,0 +1,25 @@
+<template name="membercards">
+  {{#each this}}
+  <div class="col s12 m4">
+    <div class="card">
+      <div class="card-content">
+        <div class="row center">
+          <img data-targetd="#detail{{id}}" src="imgs/{{image}}" class="responsive-img circle wm-foto"/>
+        </div>
+        <div class="row center">
+          <span id="detail{{id}}" class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">pageview</i></span>
+          <p><label>{{title}}</label></p>
+        </div>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><div class="chip">
+          <img src="imgs/{{image}}" alt="{{name}}">
+          {{fullName}}
+        </div><i class="material-icons right">close</i></span>
+        <p>{{description}}</p>
+        <a  class="js-show-skills" data-teamid="#tab{{id}}" href="#tab{{id}}">Skills</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</template>

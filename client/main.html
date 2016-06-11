@@ -1,0 +1,78 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>WebMonster.mx</title>
+  <!-- CSS  -->
+  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link href="css/material-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  {{> navigation}}
+
+  <!-- <div class="fixed-action-btn horizontal animated flash retraso-5" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large teal accent-4">
+  <i class="fa fa-rocket" aria-hidden="true"></i>
+</a>
+<ul>
+<li><a class="btn-floating red darken-4" href="https://es.pinterest.com/webmonstermx/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+<li><a class="btn-floating blue" href="https://twitter.com/webmonstermx" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a class="btn-floating blue darken-3" href="https://www.facebook.com/WebMonsterMX" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+</ul>
+</div> -->
+
+{{> header}}
+<!-- About-->
+{{> about}}
+<!-- /About-->
+
+<div class="container">
+  <div class="section" id="team" >
+    <div class="center-align">
+      <h3 class="center-align">Our Awesome Team </h3>
+    </div>
+    <div class="row">
+      {{> membercards team}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      {{> membertabs team}}
+      {{> memberareas team}}
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="row">
+      <div class="col s12 center">
+        <h4>Some of our happy Customers</h4>
+        <p class="left-align light">Besides loving working with computers, we're thrilled to keep a <b>close contact with our clients</b> along the development process as well as post-production feedback. Down below are some examples, feel free to click on any <b>slide</b> to see more info:</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- modals -->
+  {{> portfolio}}
+  {{> modals}}
+  <!-- /modals-->
+  <footer class="page-footer teal">
+
+    <div class="footer-copyright">
+      <div class="container">
+        Powered by <a class="brown-text text-lighten-3" href="http://webmonster.mx/" target="_blank"><strong>WebMonster Team</strong></a>
+      </div>
+    </div>
+  </footer>
+</div>
+<!--  Scripts-->
+
+
+
+</body>
