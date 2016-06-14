@@ -78,13 +78,16 @@ video{
   }
 }
 
-header, main, footer {
-      padding-left: 240px;
-    }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  line-height: 1.1;
+  color: #26A69A;
+}
+
 
     @media only screen and (max-width : 992px) {
       header, main, footer {
-        padding-left: 0;
+        padding-left: 120px;
       }
     }
 

@@ -1,4 +1,6 @@
 Template.navigation.onRendered(function () {
   // Use the Packery jQuery plugin
-  this.$('.button-collapse').sideNav();
+  this.$('.button-collapse').sideNav({
+    closeOnClick: true
+  });
 });
