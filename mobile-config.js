@@ -1,12 +1,10 @@
 App.info({
-  id: 'mx.webmonster.android.devteam',
-  name: 'Webmonster.mx',
-  description: 'This is an introduction of our team, portfolio, experiences and more',
-  author: 'WebMonster Development Team',
-  email: 'admin@webmonster.mx',
-  website: 'http://webmonster.mx',
-  version: '1.0.0',
- buildNumber: '100' // has to be a number
+  "id": 'mx.webmonster.mobile.devteam',
+  "name": 'Webmonster MX',
+  "description": 'This is an introduction of our team, portfolio, experiences and more',
+  "author": 'WebMonster Development Team',
+  "email": 'admin@webmonster.mx',
+  "website": 'http://webmonster.mx'
 });
 
 App.icons({
@@ -45,4 +43,4 @@ App.launchScreens({
   "android_xhdpi_landscape": "resources/splashes/android_xhdpi_landscape.png", // 1280x720
   "android_xxhdpi_portrait": "resources/splashes/android_xxhdpi_portrait.png", // 1080x1440
   "android_xxhdpi_landscape": "resources/splashes/android_xxhdpi_landscape.png" // 1440x1080
-})
+});
